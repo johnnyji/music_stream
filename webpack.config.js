@@ -2,6 +2,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 module.exports = {
+  // 'webpack/hot/dev-server' can also be replaced with --inline option from CLI
   entry: ['webpack/hot/dev-server', path.resolve(__dirname, './app/index.js')],
   output: {
     path: path.resolve(__dirname, './build'),
