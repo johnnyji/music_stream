@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool-eval --progress --colors --hot --content-base build",
+    "dev": "webpack-dev-server --devtool-eval --progress --colors --hot --display-error-details --content-base build",
+    "write-to-disk": "webpack --watch --progress --colors --display-error-details -d",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "normalize.css": "^3.0.3",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "reflux": "^0.2.12",
