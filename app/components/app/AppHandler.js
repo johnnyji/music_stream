@@ -7,8 +7,10 @@ import AppHeader from './AppHeader';
 export default class AppHandler extends ReactTemplate {
   render() {
     return (
-      <div>
+      <div className='app-handler-wrapper'>
         <AppHeader />
+              
+        {/* Route Handler needed in order for Routes to work properly */}
         <RouteHandler />
       </div>
     );

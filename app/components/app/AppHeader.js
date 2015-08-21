@@ -6,8 +6,10 @@ export default class AppHeader extends ReactTemplate {
   render() {
     return (
       <header className='app-header-wrapper'>
-        <Link to='login'>Login</Link>
-        <Link to='join'>Join</Link>
+        <div className='pull-right'>
+          <Link className='link' to='login'>Login</Link>
+          <Link className='link' to='join'>Join</Link>
+        </div>
       </header>
     );
   }

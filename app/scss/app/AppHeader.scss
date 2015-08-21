@@ -1,8 +1,17 @@
+@import '.././clarity';
+
 .app-header-wrapper {
   position: relative;
   padding: 0;
   margin: 0;
-  width: 100%;
-  height: 60px;
-  background-color: whitesmoke;
+  height: 70px;
+  background-color: $primary-brand-color;
+  .pull-right { // defined in _clarity
+    right: 2rem;
+    .link { // defined in _clarity
+      margin: 0 0.5rem;
+      color: $white;
+      font-size: 1.2rem;
+    }
+  }
 }

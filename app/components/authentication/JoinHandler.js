@@ -5,7 +5,9 @@ export default class JoinHandler extends ReactTemplate {
 
   render() {
     return (
-      <div>Join here!</div>
+      <div className='join-handler-wrapper content-container'>
+        Join here!
+      </div>
     );
   }
 }
